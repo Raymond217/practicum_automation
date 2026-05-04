@@ -4,7 +4,7 @@ import os
 folder_path = input("Enter folder path: ")
 
 # Ask user for prefix
-prefix = input("Enter file name prefix (example: history, img, file): ")
+prefix = input("Please enter file name prefix (example: history, img, file): ")
 
 # Check if folder exists
 if not os.path.exists(folder_path):
