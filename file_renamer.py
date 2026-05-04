@@ -117,8 +117,8 @@ while True:
             continue
             # Returns to menu
 
-        prefix = input("Enter file name prefix (example: img, doc, file): ")
-        # Asks for prefix again
+        my_name = input("Enter file name prefix (example: img, doc, file): ")
+        # Asks for name again
 
         files = os.listdir(current_folder)
         # Gets files from selected folder
@@ -148,7 +148,7 @@ while True:
             count = counters[extension]
             # Get number
 
-            new_name = f"{prefix}_{count}{extension}"
+            new_name = f"{my_name}_{count}{extension}"
             # Build new name
 
             new_path = os.path.join(current_folder, new_name)
