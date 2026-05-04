@@ -36,10 +36,10 @@ while True:
     elif choice.lower() == "choose" or choice == "1":
     # Checks if user selected folder option
 
-        folder_path = input("Enter folder path: ")
+        my_path = input("Enter folder path: ")
         # Asks user to input the folder path
 
-        if not os.path.exists(folder_path):
+        if not os.path.exists(my_path):
         # Checks if the folder path actually exists
 
             print("Folder does not exist.")
@@ -48,13 +48,13 @@ while True:
             continue
             # Skips rest of loop and returns to menu
 
-        current_folder = folder_path
+        current_folder = my_path
         # Saves valid folder path to variable
 
         print(f"Folder set to: {current_folder}")
         # Confirms folder selection
 
-        prefix = input("Enter file name prefix (example: img, doc, file): ")
+        my_name = input("Enter file name prefix (example: img, doc, file): ")
         # Asks user for naming prefix for new file names
 
         files = os.listdir(current_folder)
@@ -87,7 +87,7 @@ while True:
             count = counters[extension]
             # Gets current number for this extension
 
-            new_name = f"{prefix}_{count}{extension}"
+            new_name = f"{my_name}_{count}{extension}"
             # Creates new filename using prefix + number + extension
 
             new_path = os.path.join(current_folder, new_name)
