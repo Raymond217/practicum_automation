@@ -8,6 +8,6 @@ This project automatically renames files in a folder using a user-defined prefix
 - Skips folders
 
 ## How to Run
-1. Run the code.
+1. Run the code
 2. Enter folder path
 3. Enter prefix
