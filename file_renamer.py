@@ -1,10 +1,10 @@
 import os
-# Imports the os module, which allows interaction with the operating system
-# (used here for file/folder handling like listing files and renaming them)
+# Imports the os module, which allows for interaction with the operating system
+# (used here for file/folder handling like going over files and renaming them)
 
 current_folder = None
 # Stores the folder path selected by the user
-# Starts as None because no folder is chosen yet
+# Starts as None because no folder is selected yet
 
 while True:
 # Creates an infinite loop so the program keeps running until the user exits
